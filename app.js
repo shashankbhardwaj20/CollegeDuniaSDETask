@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const colleges = require('./dummy.js');
+const colleges = require('./public/dummy.js');
 
 
 app.use(express.static('public'));
