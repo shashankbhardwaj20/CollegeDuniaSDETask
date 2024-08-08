@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Rankings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Rankings</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search by college name">
+            <select id="sortSelect">
+                <option value="">Sort by...</option>
+                <option value="userReviews">User Reviews</option>
+                <option value="courseFees">Course Fees</option>
+                <option value="placement">Placement (per annum)</option>
+            </select>
+            <select id="orderSelect">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+        <div class="featured-description">
+            <span class="star">★</span> Indicates a featured college
+        </div>
+        <div class="table-container">
+            <table id="collegeTable">
+                <thead>
+                    <tr>
+                        <th>CD Rank</th>
+                        <th>Colleges</th>
+                        <th>Course Fees</th>
+                        <th>Placement (per annum)</th>
+                        <th>User Reviews</th>
+                        <th>Ranking</th>
+                    </tr>
+                </thead>
+                <tbody id="collegeTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
